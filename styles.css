@@ -1,16 +1,14 @@
 html {
   height: 100%;
-  width: 100%;
 }
 
 body {
-  max-height: 100%;
-  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   color: white;
-  border: 8px solid transparent;
-  border-image: linear-gradient(45deg, #ffaa00, #ff5500)
-    /* gradient from a light orange to a darker orange */ 1;
+  background-color: black;
 }
 
 ul {
@@ -26,11 +24,16 @@ li a {
 }
 
 header {
+  border: 3px solid;
+  border-radius: 5px;
   display: flex;
   background-color: black;
+  align-items: center;
 }
 
 footer {
+  border: 3px solid;
+  border-radius: 5px;
   display: flex;
   background-color: black;
   align-items: center;
@@ -39,6 +42,48 @@ footer {
 img {
   width: 50%;
   height: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  border-radius: 10px;
+  height: 5vh;
+  width: 20vw;
+  margin: 3px;
+}
+
+.main-index {
+  flex: 1;
+  background-color: rgb(180, 97, 19);
+}
+
+.main-menu {
+  flex: 1;
+  background-color: rgb(180, 97, 19);
+}
+
+.main-about {
+  flex: 1;
+  background-color: rgb(180, 97, 19);
+}
+
+.main-contact {
+  flex: 1;
+  background-color: rgb(180, 97, 19);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message {
+  height: 20vh;
+  width: 20vw;
 }
 
 .logo {
