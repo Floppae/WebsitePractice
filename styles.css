@@ -9,6 +9,7 @@ body {
   margin: 0;
   color: white;
   background-color: black;
+  overflow: auto;
 }
 
 ul {
@@ -19,25 +20,22 @@ ul {
   justify-content: space-between;
 }
 
-li a {
+a {
   padding: 5px;
   color: white;
 }
 
-li a:hover {
-  color: orange;
-}
-
-li a:active {
+a:hover {
   color: orange;
 }
 
 header {
-  border: 2px solid rgb(73, 42, 13);
-  border-radius: 5px;
   display: flex;
   background-color: black;
   align-items: center;
+  position: fixed;
+  box-sizing: border-box;
+  width: 100%;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -51,6 +49,11 @@ footer {
   justify-content: space-between;
   padding-left: 20px;
   padding-right: 20px;
+  position: fixed;
+  box-sizing: border-box;
+  width: 100%;
+  bottom: 0;
+  left: 0;
 }
 
 form {
@@ -61,10 +64,11 @@ form {
 }
 
 input {
-  border-radius: 10px;
+  border-radius: 20px;
   height: 5vh;
   width: 20vw;
   margin: 3px;
+  text-align: center;
 }
 
 img {
@@ -75,9 +79,10 @@ img {
 
 .main-index {
   flex: 1;
-  background-image: url(./images/flame.avif);
+  background-image: url(./images/bg3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .main-menu {
@@ -85,8 +90,12 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(./images/flame.avif);
+  background-image: url(./images/bg3.jpg);
   background-size: contain;
+  background-attachment: fixed;
+  overflow: visible;
+  margin-top: 90px;
+  margin-bottom: 50px;
 }
 
 .menu-row {
@@ -110,7 +119,9 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(./images/flame.avif);
+  justify-content: center;
+  background-image: url(./images/bg3.jpg);
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -120,7 +131,8 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(./images/flame.avif);
+  background-image: url(./images/bg3.jpg);
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -128,6 +140,16 @@ img {
 .message {
   height: 20vh;
   width: 20vw;
+}
+
+.submit-button {
+  width: 25%;
+  margin-top: 20px;
+}
+
+.submit-button:hover {
+  background-color: orange;
+  cursor: pointer;
 }
 
 .logo {
