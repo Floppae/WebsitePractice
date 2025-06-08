@@ -82,6 +82,24 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item,
+.carousel-inner {
+  height: 70vh;
+  width: 70vh;
+  overflow: hidden;
+  max-width: 700px;
+  max-height: 700px;
+}
+
+.carousel-item img {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
 }
 
 .main-menu {
@@ -133,12 +151,41 @@ img {
 .main-contact {
   flex: 1;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   background-image: url(./images/bg3.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  color: black;
+}
+
+.main-contact img {
+  border-radius: 20px;
+  max-height: 50vh;
+  width: auto;
+}
+
+.main-contact form {
+  background-color: white;
+  border-radius: 20px;
+  max-height: 50vh;
+  width: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .main-contact {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-contact form {
+    height: 40vh;
+    width: 30vw;
+  }
+  .main-contact img {
+    height: 40vh;
+    width: 30vw;
+  }
 }
 
 .message {
