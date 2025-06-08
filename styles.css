@@ -164,6 +164,7 @@ img {
   border-radius: 20px;
   max-height: 50vh;
   width: auto;
+  min-height: 250px;
 }
 
 .main-contact form {
@@ -171,6 +172,8 @@ img {
   border-radius: 20px;
   max-height: 50vh;
   width: auto;
+  padding: 30px;
+  min-height: 250px;
 }
 
 @media screen and (max-width: 600px) {
