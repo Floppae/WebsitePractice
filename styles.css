@@ -111,8 +111,7 @@ img {
   background-size: contain;
   background-attachment: fixed;
   overflow: visible;
-  margin-top: 90px;
-  margin-bottom: 50px;
+  padding-top: 100px;
 }
 
 .menu-row {
@@ -120,6 +119,12 @@ img {
   display: flex;
   justify-content: space-evenly;
   padding: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .menu-row {
+    flex-wrap: wrap;
+  }
 }
 
 .menu-item {
@@ -133,6 +138,23 @@ img {
   text-align: center;
   width: 400px;
   height: 500px;
+}
+
+.cart {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(./images/bg3.jpg);
+  background-size: contain;
+  background-attachment: fixed;
+  overflow: visible;
+  padding-bottom: 70px;
+}
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
 }
 
 .main-about {
@@ -220,6 +242,18 @@ img {
   display: flex;
   justify-content: right;
   align-items: center;
+}
+
+.nav-tabs {
+  display: none;
+}
+
+.nav-tabs.show {
+  display: flex;
+}
+
+.hamburger {
+  cursor: pointer;
 }
 
 /* Make Scrollbar Disappear */

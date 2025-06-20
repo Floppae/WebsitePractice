@@ -21,12 +21,14 @@
 
       <!-- Nav Bar 50% of header -->
       <nav class="nav">
-        <ul>
+        <ul class="nav-tabs" id="nav-tabs">
           <li><a href="./index.html">Home</a></li>
           <li><a href="./Menu.html">Menu</a></li>
           <li><a href="./About.html">About</a></li>
           <li><a href="./Contact.html">Contact</a></li>
+          <li><a href="./Cart.html">Order</a></li>
         </ul>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
       </nav>
     </header>
 
@@ -80,5 +82,11 @@
         </ul>
       </div>
     </footer>
+    <script>
+      function toggleMenu() {
+        const tabs = document.getElementById("nav-tabs");
+        tabs.classList.toggle("show");
+      }
+    </script>
   </body>
 </html>

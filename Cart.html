@@ -43,6 +43,7 @@
             melted cheddar, green papaya slaw,<br />
             spicy pickled shipka peppers, and Wolf Ketchup®
           </p>
+          <button onClick="add('Dire Wolf', 19.99)">Add to Cart</button>
         </div>
         <div class="menu-item">
           <img src="./images/Howling.avif" />
@@ -51,6 +52,7 @@
             Grilled chicken wrapped in date and pumpkin seed dough<br />
             with fried pickles, feta, melon, mint and yogurt sauce
           </p>
+          <button onClick="add('Howling', 19.99)">Add to Cart</button>
         </div>
         <div class="menu-item">
           <img src="./images/TheBeast.avif" />
@@ -59,6 +61,7 @@
             Grilled steak wrapped in a turmeric dough with BBQ crunch, blue
             cheese, marinated green olives, cilantro, and red chili mayo
           </p>
+          <button onClick="add('The Beast', 19.99)">Add to Cart</button>
         </div>
       </div>
       <div class="menu-row">
@@ -70,6 +73,7 @@
             shitake mushrooms, raisins, pickles, plantain chips, and chipotle
             aioli
           </p>
+          <button onClick="add('Brothers Grimm', 14.99)">Add to Cart</button>
         </div>
         <div class="menu-item">
           <img src="./images/Carnivores_Delight_wrap.avif" />
@@ -78,6 +82,9 @@
             Grilled steak wrapped in a date and pumpkin seed dough with fried
             egg, sumac onions, pickles, and mustard horseradish sauce
           </p>
+          <button onClick="add('Carnivores Delight', 14.99)">
+            Add to Cart
+          </button>
         </div>
         <div class="menu-item">
           <img src="./images/The_Pack_wrap.avif" />
@@ -87,6 +94,7 @@
             with melted cheddar, sumac onions, tater tots, pickled jalapeño, and
             chipotle aioli
           </p>
+          <button onClick="add('The Pack', 14.99)">Add to Cart</button>
         </div>
       </div>
       <div class="menu-row">
@@ -97,6 +105,7 @@
             Grilled Steak wrapped in original white flour dough with granny
             smith apples, pickles, toasted cashew nuts, goat cheese, and tahini
           </p>
+          <button onClick="add('The Underworld', 11.99)">Add to Cart</button>
         </div>
         <div class="menu-item">
           <img src="./images/Wolverine.avif" />
@@ -106,6 +115,7 @@
             fried eggs, shallot, kohlrabi, pickled jalapeno, pumpkin seed,
             tahini sauce
           </p>
+          <button onClick="add('Wolverine', 11.99)">Add to Cart</button>
         </div>
         <div class="menu-item">
           <img src="./images/BlueMoon.avif" />
@@ -114,8 +124,19 @@
             Fried chicken and feta wrapped in a plan dough, cashew, spicy picked
             pineapple, sumac onions, cilantro, kohlrabi, mint yogurt sauce
           </p>
+          <button onClick="add('Blue Moon', 11.99)">Add to Cart</button>
         </div>
       </div>
+    </div>
+
+    <!-- Cart -->
+    <div class="cart">
+      <h1>Your Cart</h1>
+      <!-- Div to hold all cart items -->
+      <div id="cart-items"></div>
+      <h2 id="total">Total: $0.00</h2>
+      <!-- Button to remove all items from cart -->
+      <button onclick="clearCart()">Clear Cart</button>
     </div>
 
     <!-- Footer - Social media links -->
@@ -162,5 +183,6 @@
         tabs.classList.toggle("show");
       }
     </script>
+    <script src="script.js"></script>
   </body>
 </html>
